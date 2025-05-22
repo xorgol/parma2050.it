@@ -45,6 +45,12 @@ li > ul > li:nth-child(1) {
   font-weight: 800;
 }
 
+.update {
+  padding: 1em;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+
 nav,
 footer {
   padding: 1em;
@@ -314,5 +320,30 @@ video {
 
   p {
     font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 1256px) {
+  #contents {
+    display: block;
+    position: fixed;
+    left: 1em;
+    top: 80px;
+    width: 200px;
+  }
+
+  .intro {
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 800px),
+  only screen and (max-device-width: 800px) {
+  #contents {
+    position: relative;
+  }
+
+  .intro {
+    flex-direction: column;
   }
 }
